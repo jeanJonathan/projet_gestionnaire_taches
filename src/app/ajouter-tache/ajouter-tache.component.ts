@@ -40,7 +40,7 @@ export class AjouterTacheComponent {
     description: '',
   };
 
-  // Tableau pour stocker les tâches ajoutées
+  // Tableau taches pour stocker les tâches ajoutées
   taches: Tache[] = [];
 
   // Méthode pour ajouter une tache au tableau de taches
