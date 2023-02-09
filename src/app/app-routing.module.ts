@@ -5,14 +5,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Importation des composants nécessaires à la configuration des routes
-import { Composant1Component } from './composant1/composant1.component';
-import { Composant2Component } from './composant2/composant2.component';
+import { TacheComponent } from './tache/tache.component';
+import { AjouterTacheComponent } from './ajouter-tache/ajouter-tache.component';
 
 const routes: Routes = [
   // Définition d'une route avec un chemin et le composant associé
-  { path: 'tache', component: Composant1Component },
+  { path: 'tache', component: TacheComponent },
   // Définition d'une autre route avec un chemin et le composant associé
-  { path: 'ajout-tache', component: Composant2Component },
+  { path: 'ajout-tache', component: AjouterTacheComponent },
 ];
 /*Notons que les noms des chemin "taches" et "ajout-tache" sont des routes
  virtuelles utilisées dans l'application Angular pour faire la correspondance
