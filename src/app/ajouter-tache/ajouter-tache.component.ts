@@ -10,7 +10,7 @@ export class Tache {
 }
 
 @Component({
-  selector: 'app-ajout-tache',
+  selector: 'app-ajouter-tache',
   //chemin pour les fichiers HTML et CSS correspondant au composant2
   //templateUrl: './composant2.component.html',
   //styleUrls: ['./composant2.component.css']
