@@ -5,8 +5,13 @@ import { Component } from '@angular/core';
 qui sera lié aux champs du formulaire et un tableau
 taches qui servira à stocker les tâches ajoutées*/
 export class Tache {
+  /*Rappel en typeScript les proprites d'une classe doivent etre definie ou avoir une valeur initial*/
   nom: string;
   description: string;
+  constructor(nom:string,description:string) {
+    this.nom=nom;
+    this.description=description;
+  }
 }
 
 @Component({

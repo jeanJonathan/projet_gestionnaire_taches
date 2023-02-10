@@ -1,5 +1,6 @@
 //import { Component } from '@angular/core';
 import { Component, Input } from '@angular/core';
+import {Tache} from "../ajouter-tache/ajouter-tache.component";
 
 @Component({
   selector: 'app-tache-liste',
@@ -25,9 +26,15 @@ import { Component, Input } from '@angular/core';
 })
 export class TacheListeComponent {
   //Pour signifier que cette propriete est passee depuis un autre composant en utilisant la directive [taches]="taches"
-  @Input() taches;
-  @Input() terminerTache: Function;
+  @Input() taches: Tache[];
+  /*Pour signifier que terminerTache est un input qui attend un entier
+  qui prend un argument de type number et retourne void*/
+  @Input() terminerTache: (tache: number) => void;
 
+  constructor() {
+    this.taches =[];
+    this.terminerTache = () => {}
+  }
 }
 
 
