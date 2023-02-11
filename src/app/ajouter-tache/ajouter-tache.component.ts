@@ -45,7 +45,12 @@ export class Tache {
       <ul>
         <!----pour itérer sur le tableau taches et afficher les noms et
          les descriptions de chaque tâche.---->
-        <li *ngFor="let t of taches">{{t.nom}} - {{t.description}}</li>
+         <!---Implementation a l'interieur de la balise <li> la possibilite a l'utilisateur de supprimer
+         un element ajouter en utilisant l'index i-->
+        <li *ngFor="let t of taches;let i = index">
+          {{t.nom}} - {{t.description}}
+          <button (click)="supprimerTache(i)">Supprimer</button>
+        </li>
       </ul>
     </div>
   `,
@@ -71,4 +76,11 @@ export class AjouterTacheComponent {
       description: '',
     };
   }
+  /*Ajout d'Une methode supprimer tache pour permettre a l'utilisateur
+  * de supprimer la tache qu'il a rajouter*/
+  supprimerTache(index: number) {
+    /*splice pour supprimer un element dans le tableau*/
+    this.taches.splice(index, 1);
+  }
+
 }
