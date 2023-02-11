@@ -13,7 +13,6 @@ export class Tache {
     this.description=description;
   }
 }
-
 @Component({
   selector: 'app-ajouter-tache',
   //chemin pour les fichiers HTML et CSS correspondant au composant2
