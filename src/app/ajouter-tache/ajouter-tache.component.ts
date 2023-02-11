@@ -20,6 +20,7 @@ export class Tache {
   //templateUrl: './composant2.component.html',
   //styleUrls: ['./composant2.component.css']
   template: `
+    <h2>Ajout des taches</h2>
     <!--Lorsqu'on submit, la tache est automatiquement ajoutee--->
     <form (ngSubmit)="ajouterTache()">
       <div>
@@ -37,6 +38,16 @@ export class Tache {
       </div>
       <button type="submit">Ajouter tâche</button>
     </form>
+    <!--- pour afficher la liste des tâches ajoutées uniquement
+     si le tableau taches contient au moins un élément--->
+    <div *ngIf="taches.length">
+      <h3>Tâches ajoutées:</h3>
+      <ul>
+        <!----pour itérer sur le tableau taches et afficher les noms et
+         les descriptions de chaque tâche.---->
+        <li *ngFor="let t of taches">{{t.nom}} - {{t.description}}</li>
+      </ul>
+    </div>
   `,
 })
 export class AjouterTacheComponent {
@@ -50,7 +61,7 @@ export class AjouterTacheComponent {
 
   // Méthode pour ajouter une tache au tableau de taches
   /*Cette methode est appelée lorsque le formulaire est soumis et elle ajoute
-  la tâche en cours de saisie au tableau taches.*/
+  la tâce en cours de saisie au tableau taches.*/
   ajouterTache() {
     //Ajoute la valeur de la tache au tableau
     this.taches.push(this.tache);
