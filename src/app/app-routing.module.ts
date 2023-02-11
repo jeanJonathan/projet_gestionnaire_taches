@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'tache', component: TacheComponent },
   // Définition d'une autre route avec un chemin et le composant associé
   { path: 'ajout-tache', component: AjouterTacheComponent },
-  { path: 'liste-tache', component: TacheListeComponent },
+  { path: 'tache-liste', component: TacheListeComponent },
 
 ];
 /*Notons que les noms des chemin "taches" et "ajout-tache" sont des routes

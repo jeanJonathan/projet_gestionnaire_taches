@@ -17,8 +17,8 @@ export class Tache {
 @Component({
   selector: 'app-ajouter-tache',
   //chemin pour les fichiers HTML et CSS correspondant au composant2
-  //templateUrl: './composant2.component.html',
-  //styleUrls: ['./composant2.component.css']
+  //templateUrl: './ajouter-tache.component.html',
+  styleUrls: ['./ajouter-tache.component.css'],
   template: `
     <h2>Ajout des taches</h2>
     <!--Lorsqu'on submit, la tache est automatiquement ajoutee--->

@@ -11,7 +11,7 @@ export class AppComponent {
     et sur "false" pour la masquer */
   showApp: boolean = true;
   title = 'projet_gestionnaire_taches';
-  message= 'Bienvenue dans ton application Angular jj !'
+  message= 'Cette appli a a ete concu dans le cadre d\'un apprentissage personnel de Angular !'
 
   taches = [
     { nom: 'Tâche 1', description: 'La Description de la tâche 1 (Composant racine)' },

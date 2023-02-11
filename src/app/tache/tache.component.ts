@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 /*Composant stockant les taches*/
 @Component({
   selector: 'app-tache',
+  //TemplateUrl et template ne peuvent pas rester ensemble
   //templateUrl: './tache.component.html',
-  //styleUrls: ['./tache.component.css']
+  styleUrls: ['./tache.component.css'],
   template: `
     <h2>Presentation des taches</h2>
     <ul>
