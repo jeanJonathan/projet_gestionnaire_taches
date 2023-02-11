@@ -17,6 +17,5 @@ export class AppComponent {
     { nom: 'Tâche 1', description: 'La Description de la tâche 1 (Composant racine)' },
     { nom: 'Tâche 2', description: 'La Description de la tâche 2 (Composant racine)' },
     { nom: 'Tâche 3', description: 'La Description de la tâche 3 (Composant racine)' },
-
   ];
 }
