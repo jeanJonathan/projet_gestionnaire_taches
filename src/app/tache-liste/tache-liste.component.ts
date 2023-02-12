@@ -27,6 +27,8 @@ import {Tache} from "../ajouter-tache/ajouter-tache.component";
 export class TacheListeComponent {
   //Pour signifier que cette propriete est passee depuis un autre composant en utilisant la directive [taches]="taches"
   //Il s'agit ici du composant racine ici ;)
+  /*Rmq: Cela signifie que la propriete taches du composant enfant est
+   liee a la propriete taches du composant parent (composant-racine)*/
   @Input() taches: Tache[];
   /*Pour signifier que terminerTache est un input qui attend un entier
   qui prend un argument de type number et retourne void*/

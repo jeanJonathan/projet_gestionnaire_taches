@@ -11,7 +11,6 @@ import { AjouterTacheComponent } from './ajouter-tache/ajouter-tache.component';
 //On importe la bibliotheque Angular Forms pour pouvoir utiliser la directive ngSubmit dans le Composant ajouterTache
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormAdressComponent } from './form-adress/form-adress.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
@@ -24,7 +23,6 @@ import { MatCardModule } from '@angular/material/card';
     TacheListeComponent,
     TacheComponent,
     AjouterTacheComponent,
-    FormAdressComponent
   ],
   imports: [
     MatSlideToggleModule,
